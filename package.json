@@ -1,0 +1,22 @@
+{
+  "name": "test-ffmpeg-blurred",
+  "version": "1.0.0",
+  "description": "test to make video blurred by ffmpeg",
+  "main": "index.js",
+  "author": "eason.kuo",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node -r tsconfig-paths/register index.ts",
+    "start": "rm -rf dist/* && tsc --build && node dist/index.js"
+  },
+  "devDependencies": {
+    "@types/fluent-ffmpeg": "^2.1.27",
+    "@types/node": "^22.10.4",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "fluent-ffmpeg": "2.1.2"
+  }
+}
